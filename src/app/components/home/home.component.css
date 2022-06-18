@@ -1,0 +1,22 @@
+.wrapper {
+    height: 40%;
+    width: 100%;
+}
+
+.image-div {
+max-height: 50vh;
+}
+
+.image {
+    height: inherit;
+    width: 100%;
+}
+
+.mat-card {
+    height: 25vh;
+    width: 20vw;
+}
+.card-image {
+    height: 40%;
+    width: fit-content;
+}
