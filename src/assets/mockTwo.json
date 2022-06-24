@@ -1,0 +1,114 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "first_name": "Sebastian",
+        "last_name": "Eschweiler",
+        "department": "operations",
+        "salary": 10000,
+        "branch": "green",
+        "position": "smasher",
+        "company": "avengers",
+        "company_id": 11,
+        "phonenumber": 990909090,
+        "email": "sebastian@codingthesmartway.com"
+      },
+      {
+        "id": 2,
+        "first_name": "Steve",
+        "last_name": "Palmer",
+        "department": "finance",
+        "salary": 10000,
+        "branch": "yello",
+        "position": "casher",
+        "company": "gurdians",
+        "company_id": 12,
+        "phonenumber": 980808080,
+        "email": "steve@codingthesmartway.com"
+      },
+      {
+        "id": 3,
+        "first_name": "Ann",
+        "last_name": "Smith",
+        "department": "managment",
+        "salary": 10000,
+        "branch": "red",
+        "position": "manager",
+        "company": "justice League",
+        "company_id": 13,
+        "phonenumber": 987654321,
+        "email": "ann@codingthesmartway.com"
+      }
+    ],
+    "department": [
+      {
+        "id": 9,
+        "name": "finance",
+        "company": "gurdians"
+      },
+      {
+        "id": 8,
+        "name": "operations",
+        "company": "gurdians"
+      },
+      {
+        "id": 9,
+        "name": "managment",
+        "company": "gurdians"
+      }
+    ],
+    "company": [
+      {
+        "name": "x-force",
+        "id": 14
+      },
+      {
+        "id": 11,
+        "name": "avengers",
+        "logo": "assets/lamp.png"
+      },
+      {
+        "id": 12,
+        "name": "gurdians",
+        "logo": "assets/lamp.png"
+      },
+      {
+        "name": "League one",
+        "logo": "assets/tools.png",
+        "id": 19
+      },
+      {
+        "id": 20,
+        "name": "League one",
+        "logo": "assets/tools.png"
+      },
+      {
+        "name": "League one",
+        "id": 21
+      },
+      {
+        "name": "Boot Man",
+        "id": 22
+      },
+      {
+        "name": "x men",
+        "id": 23
+      },
+      {
+        "name": "x men",
+        "id": 25
+      },
+      {
+        "name": "Captain Jack Sparrow",
+        "id": 30
+      },
+      {
+        "name": "dowrf",
+        "id": 31
+      },
+      {
+        "name": "Aqua Man Fat Man",
+        "id": 32
+      }
+    ]
+  }

@@ -1,38 +1,75 @@
-
 <div class="wrapper">
   <div class="image-div">
     <img class="image" src="../../../assets/beach.jpg" alt="hk">
   </div>
-  <div class="mat-card">
-  <mat-card>
-    
+
+  <div class="mat-card-div">
+    <mat-card class="card-company" *ngFor="let data of dataSource">
       <mat-card-header>
-          <mat-card-title>Title</mat-card-title>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{data.name}}</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
       </mat-card-header>
-      <img class="card-image" src="../../../assets/Flower.png">
+      <img mat-card-md-image class="card-image" src="../../../{{data.logo}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
-          Text content
+        <span>foo: 5656</span>&nbsp;
+        <span>soo: 8</span>
       </mat-card-content>
-      
-  </mat-card>
+    </mat-card>
+
+    
+
+  </div>
+
+  <div class="news-events">
+    <article class="news-events-card">
+      <section  class="news-events-title">
+        <h3>The Title More To Hvae</h3>
+      </section>
+      <section class="news-body">
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
+          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
+          aspernatur.</p>
+      </section>
+    </article>
+
+    <article class="news-events-card">
+      <section  class="news-events-title">
+        <h3>The Title More To Hvae</h3>
+      </section>
+      <section class="news-body">
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
+          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
+          aspernatur.</p>
+      </section>
+    </article>
+
+    <article class="news-events-card">
+      <section  class="news-events-title">
+        <h3>The Title More To Hvae</h3>
+      </section>
+      <section class="news-body">
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
+          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
+          aspernatur.</p>
+      </section>
+    </article>
+
+    <article class="news-events-card">
+      <section  class="news-events-title">
+        <h3>The Title More To Hvae</h3>
+      </section>
+      <section class="news-body">
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
+          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
+          aspernatur.</p>
+      </section>
+    </article>
+
+  </div>
+
+  <div class="footer">
+
+  </div>
+
 </div>
-</div>
-<mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="../../../assets/Flower.png" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>

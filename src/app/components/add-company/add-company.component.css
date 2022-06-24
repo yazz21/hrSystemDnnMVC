@@ -1,0 +1,13 @@
+.wrap {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    min-width: 200px;
+    width: 50%;
+    align-content: center;
+    padding: 30px;
+}
+
+button {
+    width: 50%;
+}
