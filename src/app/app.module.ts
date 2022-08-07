@@ -24,6 +24,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AddCompanyDialogboxComponent } from './components/add-company-dialogbox/add-company-dialogbox.component';
 import { DeleteCompanyDialogboxComponent } from './components/delete-company-dialogbox/delete-company-dialogbox.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CompanyDetailComponent } from './components/company-detail/company-detail.component';
+import { SummeryPipe } from './pipes/summery.pipe';
 
 
 @NgModule({
@@ -39,7 +42,10 @@ import { DeleteCompanyDialogboxComponent } from './components/delete-company-dia
     HomeComponent,
     AboutComponent,
     AddCompanyDialogboxComponent,
-    DeleteCompanyDialogboxComponent
+    DeleteCompanyDialogboxComponent,
+    NotFoundComponent,
+    CompanyDetailComponent,
+    SummeryPipe
     
 
   ],

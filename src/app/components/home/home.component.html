@@ -4,66 +4,29 @@
   </div>
 
   <div class="mat-card-div">
-    <mat-card class="card-company" *ngFor="let data of dataSource">
+    <mat-card class="card-company" *ngFor="let data of companydata">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{data.name}}</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-subtitle>{{data.id}}</mat-card-subtitle>
       </mat-card-header>
       <img mat-card-md-image class="card-image" src="../../../{{data.logo}}" alt="Photo of a Shiba Inu">
       <mat-card-content>
-        <span>foo: 5656</span>&nbsp;
-        <span>soo: 8</span>
+        <span>{{data.description | summery }}  </span>
       </mat-card-content>
     </mat-card>
-
-    
-
-  </div>
+ </div>
 
   <div class="news-events">
-    <article class="news-events-card">
-      <section  class="news-events-title">
-        <h3>The Title More To Hvae</h3>
-      </section>
-      <section class="news-body">
-        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
-          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
-          aspernatur.</p>
-      </section>
-    </article>
 
-    <article class="news-events-card">
+    <article class="news-events-card" *ngFor="let item of newsdata">
+      <a routerLink="">
       <section  class="news-events-title">
-        <h3>The Title More To Hvae</h3>
+        <h3>{{item.title}}</h3>
       </section>
       <section class="news-body">
-        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
-          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
-          aspernatur.</p>
+        <p >{{item.body }}</p>
       </section>
-    </article>
-
-    <article class="news-events-card">
-      <section  class="news-events-title">
-        <h3>The Title More To Hvae</h3>
-      </section>
-      <section class="news-body">
-        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
-          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
-          aspernatur.</p>
-      </section>
-    </article>
-
-    <article class="news-events-card">
-      <section  class="news-events-title">
-        <h3>The Title More To Hvae</h3>
-      </section>
-      <section class="news-body">
-        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo assumenda ullam maxime qui, tempore, ex
-          animi veniam unde aperiam dolorum sapiente nostrum consequuntur ut laboriosam sed tempora inventore sint
-          aspernatur.</p>
-      </section>
+    </a>
     </article>
 
   </div>

@@ -1,17 +1,22 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AddCompanyComponent } from './add-company.component';
-import { RouterModule, Routes } from '@angular/router';
-import { MatButtonModule, MatFormFieldControl, MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { AddCompanyComponent } from "./add-company.component";
+import { RouterModule, Routes } from "@angular/router";
+import {
+  MatButtonModule,
+  MatSelectModule,
+  MatOptionModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+} from "@angular/material";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 const routes: Routes = [
   {
-    path: 'add-company',
-    component: AddCompanyComponent
-  }
+    path: "add-company",
+    component: AddCompanyComponent,
+  },
 ];
 
 @NgModule({
@@ -24,7 +29,9 @@ const routes: Routes = [
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    MatSelectModule,
+  MatOptionModule,
+  ],
 })
-export class AddCompanyModule { }
+export class AddCompanyModule {}

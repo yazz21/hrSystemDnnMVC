@@ -27,13 +27,27 @@
 }
 
 .card-image {
-    width: fit-content;
+
+    width: 150px;
 }
 
 .card-company {
-    display: flex;
+   display: flex;
     flex-direction: column;
+    /* width: 200px; */
+    align-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+a  {
+  text-decoration: none;
+}
+a::before{
+  text-decoration: none;
+}
+a::after
+{
+  text-decoration: none;
 }
 
 .news-events {

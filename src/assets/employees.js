@@ -7,8 +7,8 @@ function generateEmployees () {
     var last_name = faker.name.lastName()
     var gender = faker.name.gender()
     var department = faker.name.jobType()
-    var salary = ffaker.datatype.number({ min: 1000000 })
-    var branch = faker.address.cityName() 
+    var salary = faker.datatype.number({ min: 1000000 })
+    var branch = faker.address.cityName()
     var position = faker.name.jobTitle()
     var company = faker.company.bs()
     var phonenumber = faker.phone.number()
@@ -24,7 +24,7 @@ function generateEmployees () {
       "branch": branch,
       "position": position,
       "company": company,
-      "phonenumber": phonenumber, 
+      "phonenumber": phonenumber,
       "email": email
     })
   }
