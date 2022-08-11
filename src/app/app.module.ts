@@ -16,10 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { MaterialModule } from './material.module';
 import { CompanyService } from './services/company.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddCompanyComponent } from './components/add-company/add-company.component';
 import { AddCompanyDialogboxComponent } from './components/add-company-dialogbox/add-company-dialogbox.component';
@@ -27,6 +24,7 @@ import { DeleteCompanyDialogboxComponent } from './components/delete-company-dia
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { CompanyDetailComponent } from './components/company-detail/company-detail.component';
 import { SummeryPipe } from './pipes/summery.pipe';
+import { NewsFaceComponent } from './components/news-face/news-face.component';
 
 
 @NgModule({
@@ -45,7 +43,8 @@ import { SummeryPipe } from './pipes/summery.pipe';
     DeleteCompanyDialogboxComponent,
     NotFoundComponent,
     CompanyDetailComponent,
-    SummeryPipe
+    SummeryPipe,
+    NewsFaceComponent
     
 
   ],

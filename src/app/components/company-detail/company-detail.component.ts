@@ -25,11 +25,7 @@ export class CompanyDetailComponent implements OnInit {
     });
 
     console.log(this.companyId);
-    this.companyData = this.companyService
-      .getCompanyDetail(this.companyId)
-      console.log(this.companyData);
-
-
+    this.companyData = this.companyService.getCompanyDetail(this.companyId);
+    console.log(this.companyData);
   }
 }
-

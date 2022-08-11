@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { MatTableDataSource } from "@angular/material";
+import { Router } from "@angular/router";
 import { CompanyService } from "src/app/services/company.service";
 import { NewsService } from "src/app/services/news.service";
 
@@ -14,7 +15,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private companyService: CompanyService,
-    private newsservice: NewsService
+    private newsservice: NewsService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -26,5 +28,13 @@ export class HomeComponent implements OnInit {
     this.newsservice.getAllNews().subscribe((res) => {
       this.newsdata = res;
     });
+  }
+
+  onSelectItem(data) {
+    this.router.navigate(["/newsandevents", data.id]);
+  }
+
+  onSelectCompany(data) {
+    this.router.navigate(["/company", data.id]);
   }
 }
